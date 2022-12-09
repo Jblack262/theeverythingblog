@@ -3,6 +3,7 @@ import Image from 'next/image'
 import BlogCard from '../components/blogCard'
 import GoogleAd from '../components/googleAd'
 import Script from 'next/script'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -12,8 +13,8 @@ export default function Home() {
         <meta name="description" content="The Everything Blog is a one-stop destination for all your informational needs. From current events and politics to science and technology, we cover it all. Our team of expert writers brings you the latest news and insights on a wide range of topics, providing in-depth analysis and thoughtful commentary. Whether you're looking to stay up-to-date on the latest trends or want to learn something new, The Everything Blog has you covered. Join our growing community of readers and discover why we're the go-to source for comprehensive coverage of everything under the sun." />
         <link rel="icon" href="/favicon.ico" />
 
-        <Script async="true" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9451016379752441" crossorigin="anonymous" />
       </Head>
+      <Script async="true" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9451016379752441" crossorigin="anonymous" />
       
       <div id='page-header'>
         <div className='logo'></div>
@@ -24,7 +25,7 @@ export default function Home() {
         <div id='content'>
           <h1 id='content-title'>The blog that knows no limits</h1>
           <p id='content-subtitle'>The Everything Blog is a comprehensive source of information on a wide range of topics, providing expert analysis and commentary.</p>
-          <a href='#' className='btn'>Learn More</a>
+          <Link href='#' className='btn'>Learn More</Link>
         </div>
       </section>
 
@@ -42,7 +43,7 @@ export default function Home() {
               <BlogCard />
               <BlogCard />
             </div>
-            <a className='btn'>View All Posts</a>
+            <Link href="/" className='btn'>View All Posts</Link>
           </div>
           <div className='google-container'><GoogleAd /></div>
         </div>
@@ -53,10 +54,10 @@ export default function Home() {
           <div className='logo'></div>
         </div>
         <ul id='links'>
-          <li><a href='/'>Home</a></li>
-          <li><a href='/'>Articles</a></li>
-          <li><a href='/'>Terms</a></li>
-          <li><a href='/'>Privacy</a></li>
+          <li><Link href='/'>Home</Link></li>
+          <li><Link href='/'>Articles</Link></li>
+          <li><Link href='/'>Terms</Link></li>
+          <li><Link href='/'>Privacy</Link></li>
         </ul>
         <p>The Everything Blog © 2022</p>
       </footer>
