@@ -1,0 +1,26 @@
+$logoSize: 75px;
+$logoThickness: 5px;
+$logoOverlap: 25px;
+$logoOpacity: .7;
+
+.logo {
+    position: absolute;
+    opacity: $logoOpacity;
+
+    &::before,
+    &:after {
+        content: '';
+        position: absolute;
+        width: $logoSize;
+        height: $logoSize;
+        border: $logoThickness solid $accent-3;
+        border-radius: 50%;
+        background-color: transparent;
+        transform: translate(calc($logoOverlap / -2), -50%);
+
+    }
+
+    &::after {
+        transform: translate(calc(-100% + ($logoOverlap / 2)), -50%);
+    }
+}
