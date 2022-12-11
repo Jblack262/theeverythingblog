@@ -3,7 +3,6 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 import BlogCard from '../components/blogCard'
-import GoogleAd from '../components/GoogleAd'
 
 export default function Home() {
   return (
@@ -34,7 +33,14 @@ export default function Home() {
         </div>
 
         <div id='posts-row'>
-          <div className='google-container'><GoogleAd /></div>
+          <div className='google-container'>
+            <ins className="adsbygoogle"
+              style={{ display: "block" }}
+              data-ad-client="ca-pub-9451016379752441"
+              data-ad-slot="9567890956"
+              data-ad-format="auto"
+              data-full-width-responsive="true"></ins>
+          </div>
           <div className='posts-container'>
             <div className='posts-grid'>
               <BlogCard />
@@ -44,7 +50,14 @@ export default function Home() {
             </div>
             <Link href="/" className='btn'>View All Posts</Link>
           </div>
-          <div className='google-container'><GoogleAd /></div>
+          <div className='google-container'>
+            <ins className="adsbygoogle"
+              style={{ display: "block" }}
+              data-ad-client="ca-pub-9451016379752441"
+              data-ad-slot="9567890956"
+              data-ad-format="auto"
+              data-full-width-responsive="true"></ins>
+          </div>
         </div>
       </section>
 
