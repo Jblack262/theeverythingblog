@@ -2,7 +2,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 
-import { BlogCard, GoogleAd } from '../components/index.js';
+import BlogCard from '../components/blogCard'
+import GoogleAd from '../components/GoogleAd'
 
 export default function Home() {
   return (
