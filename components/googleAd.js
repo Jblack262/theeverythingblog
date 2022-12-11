@@ -1,5 +1,3 @@
-
-
 export default function GoogleAd () {
     return (
         <ins className="adsbygoogle"
