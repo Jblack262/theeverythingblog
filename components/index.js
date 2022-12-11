@@ -1,5 +1,5 @@
-import BlogCard from "./blogCard";
-import GoogleAd from "./GoogleAd";
+import BlogCard from "./blogCard.js";
+import GoogleAd from "./GoogleAd.js";
 
 export {
     BlogCard,
