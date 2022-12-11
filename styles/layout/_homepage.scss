@@ -5,6 +5,7 @@
     place-items: center;
     background-color: $secondary-bg;
     color: $font-light;
+    position: relative;
 
     h1 {
         text-transform: uppercase;
@@ -20,6 +21,8 @@
     background-image: url(/Wave.svg);
     background-position: center bottom;
     background-size: cover;
+    background-repeat: no-repeat;
+
 
     #content {
         display: flex;
@@ -30,6 +33,7 @@
         width: 50vw;
         gap: 1rem;
         margin: 4rem auto;
+
 
         #content-title {
             font-size: 2.25rem;
@@ -42,6 +46,16 @@
             width: 80%;
             font-size: 14px;
             margin: 0;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        background-size: contain;
+        height: calc(100vh - 350px);
+        max-height: 750px;
+
+        #content {
+            width: 90vw;
         }
     }
 }
@@ -128,14 +142,7 @@ footer {
     #logo-container {
         height: 85px;
         padding: .5rem;
-
-        &>.logo::after {
-            transform: translate(calc(-100% + ($logoOverlap / 2)), 0);
-        }
-
-        &>.logo::before {
-            transform: translate(calc($logoOverlap / -2), 0);
-        }
+        position: relative;
     }
 
     #links {

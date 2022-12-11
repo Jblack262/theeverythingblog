@@ -1,13 +1,12 @@
-import Script from "next/script"
+
 
 export default function GoogleAd () {
     return (
-        <Script
-            id="7093836369"
+        <ins className="adsbygoogle"
+            style={{ display: "block" }}
             data-ad-client="ca-pub-9451016379752441"
-            async="true"
-            strategy="beforeInteractive"
-            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
-        />
+            data-ad-slot="9567890956"
+            data-ad-format="auto"
+            data-full-width-responsive="true"></ins>
     )
 }

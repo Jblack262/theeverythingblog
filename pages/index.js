@@ -1,9 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import BlogCard from '../components/blogCard'
-import GoogleAd from '../components/googleAd'
-import Script from 'next/script'
 import Link from 'next/link'
+
+import { BlogCard, GoogleAd } from '../components';
 
 export default function Home() {
   return (
@@ -14,7 +13,6 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
 
       </Head>
-      <Script async="true" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9451016379752441" crossorigin="anonymous" />
       
       <div id='page-header'>
         <div className='logo'></div>
